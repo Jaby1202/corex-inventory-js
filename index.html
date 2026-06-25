@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Corex inventory</title>
+
+        <meta name="description"
+        content="Corex es una plataforma SaaS modular para la gestión de inventario
+        y operaciones, diseñada para crecer hacia un sistema completo para microempresas.">
+
+        <meta property="og:title" content="Corex inventory">
+        <meta property="og:description" 
+        content="Corex es una plataforma SaaS modular para la gestión de inventario
+        y operaciones, diseñada para crecer hacia un sistema completo para microempresas.">
+        <meta property="og:image:alt" content="icono de Corex">
+
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#09f">
+
+        <link rel="stylesheet" href="public/css/styles.css">
+        <script type="module" src="public/app.js"></script>
+        
+        
+    </head>
+    <body>
+        <aside class="sidebar">
+            <section class="nombre">
+                <h1>Corex-Inventory</h1>
+                <p>Gestión de inventario</p>
+                <button class="menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                     width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                     class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
+                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                     <path d="M4 6l16 0" />
+                     <path d="M4 12l16 0" />
+                     <path d="M4 18l16 0" />
+                    </svg>
+                </button>
+            </section>
+            
+            <section class="navegacion">
+                <nav>
+                    <div class="item">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="currentColor" 
+                            class="icono">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M9 3a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-6a2 2 0 0 1 2 -2zm0 12a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-2a2 2 0 0 1 2 -2zm10 -4a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-6a2 2 0 0 1 2 -2zm0 -8a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-2a2 2 0 0 1 2 -2z" />
+                        </svg>
+                        <a class="link" href="#dashboard">Dashboard</a>
+                    </div>
+                    <div class="item">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                            class="icono">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M3 21v-13l9 -4l9 4v13" />
+                            <path d="M13 13h4v8h-10v-6h6" />
+                            <path d="M13 21v-9a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v3" />
+                        </svg>
+                        <a class="link" href="#inventario">Inventario</a>
+                    </div>
+                    <div class="item">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="24" height="24" viewBox="0 0 24 24" fill="currentColor" 
+                            class="icono">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M6 2a1 1 0 0 1 .993 .883l.007 .117v1.068l13.071 .935a1 1 0 0 1 .929 1.024l-.01 .114l-1 7a1 1 0 0 1 -.877 .853l-.113 .006h-12v2h10a3 3 0 1 1 -2.995 3.176l-.005 -.176l.005 -.176c.017 -.288 .074 -.564 .166 -.824h-5.342a3 3 0 1 1 -5.824 1.176l-.005 -.176l.005 -.176a3.002 3.002 0 0 1 1.995 -2.654v-12.17h-1a1 1 0 0 1 -.993 -.883l-.007 -.117a1 1 0 0 1 .883 -.993l.117 -.007h2zm0 16a1 1 0 1 0 0 2a1 1 0 0 0 0 -2m11 0a1 1 0 1 0 0 2a1 1 0 0 0 0 -2" />
+                        </svg>
+                        <a class="link" href="#pedidos">Pedidos</a>
+                    </div>
+                    <div class="item">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                            class="icono"><path 
+                            stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 7a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                            <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                        </svg>
+                        <a class="link" href="#clientes">Clientes</a>
+                    </div>
+                    <div class="item">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                            class="icono">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
+                            <path d="M9 5a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2" />
+                            <path d="M9 17v-5" />
+                            <path d="M12 17v-1" />
+                            <path d="M15 17v-3" />
+                        </svg>
+                        <a class="link" href="#reportes">Reportes</a>
+                    </div>
+                    <div class="item">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                            class="icono">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065" />
+                            <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
+                        <a class="link" href="#configuracion">Configuración</a>
+                    </div>
+                </nav>
+            </section>
+            
+            <section class="informacion">
+                <nav>
+                    <a class="link" href="user"><strong>User</strong></a>
+                    <a class="link" href="">correo</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="24" height="24" viewBox="0 0 24 24" fill="currentColor" 
+                        class="icon icon-tabler icons-tabler-filled icon-tabler-stack-2">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M20.894 15.553a1 1 0 0 1 -.447 1.341l-8 4a1 1 0 0 1 -.894 0l-8 -4a1 1 0 0 1 .894 -1.788l7.553 3.774l7.554 -3.775a1 1 0 0 1 1.341 .447m0 -4a1 1 0 0 1 -.447 1.341l-8 4a1 1 0 0 1 -.894 0l-8 -4a1 1 0 0 1 .894 -1.788l7.552 3.775l7.554 -3.775a1 1 0 0 1 1.341 .447m-8.887 -8.552q .056 0 .111 .007l.111 .02l.086 .024l.012 .006l.012 .002l.029 .014l.05 .019l.016 .009l.012 .005l8 4a1 1 0 0 1 0 1.788l-8 4a1 1 0 0 1 -.894 0l-8 -4a1 1 0 0 1 0 -1.788l8 -4l.011 -.005l.018 -.01l.078 -.032l.011 -.002l.013 -.006l.086 -.024l.11 -.02l.056 -.005z" />
+                    </svg>
+                </nav>
+            </section>
+        
+        </aside>
+        <header class="topbar-global">
+                    <section class="panel">
+                        <header>
+                            <h2>Panel de control</h2>
+                            <p>Bienvenido de nuevo, aquí esta el resumen de hoy</p>
+                        </header>
+                        <form class="buscar">
+                            <div>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" 
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                                        stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" 
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" 
+                                        d="M0 0h24v24H0z" fill="none"/><path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" />
+                                    </svg>
+                                </span>
+                            
+                                <input 
+                                    type="text" 
+                                    name="buscar-producto" 
+                                    id="buscar-producto" 
+                                    placeholder="Buscar producto..."
+                                >
+                            </div> 
+                        </form>
+
+                        <div class="mensajes">
+                                <a class="link" href="Notificacion">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-bell">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M14.235 19c.865 0 1.322 1.024 .745 1.668a3.992 3.992 0 0 1 -2.98 1.332a3.992 3.992 0 0 1 -2.98 -1.332c-.552 -.616 -.158 -1.579 .634 -1.661l.11 -.006h4.471z" />
+                                    <path d="M12 2c1.358 0 2.506 .903 2.875 2.141l.046 .171l.008 .043a8.013 8.013 0 0 1 4.024 6.069l.028 .287l.019 .289v2.931l.021 .136a3 3 0 0 0 1.143 1.847l.167 .117l.162 .099c.86 .487 .56 1.766 -.377 1.864l-.116 .006h-16c-1.028 0 -1.387 -1.364 -.493 -1.87a3 3 0 0 0 1.472 -2.063l.021 -.143l.001 -2.97a8 8 0 0 1 3.821 -6.454l.248 -.146l.01 -.043a3.003 3.003 0 0 1 2.562 -2.29l.182 -.017l.176 -.004z" />
+                                </svg>
+                                </a>
+                        </div>   
+                        <div class="registrar">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="15" height="15" viewBox="0 0 24 24" 
+                                    fill="none" 
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-plus">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M12 5l0 14" />
+                                    <path d="M5 12l14 0" />
+                                </svg>
+                            </span>
+                            
+                            <button>
+                                Registrar Movimiento
+                            </button>
+                        </div>
+                    </section>
+        </header>
+        <main>
+                
+                <section class="estadisticas">
+                    <article class="cards kilos_stock">
+                        <header>
+                            <h4>Total Kilos en stock </h4>
+                        </header>
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-scale-outline">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-10" />
+                            <path d="M12 7c1.956 0 3.724 .802 5 2.095l-2.956 2.904a3 3 0 0 0 -2.038 -.799a3 3 0 0 0 -2.038 .798l-2.956 -2.903a6.979 6.979 0 0 1 5 -2.095" />
+                        </svg>
+                        <span id="stats-stock">
+                            0 kg
+                        </span>
+                        <footer>
+                            5% vs mes anterior
+                        </footer>
+                    </article>
+                    
+                    <article class="cards stock">
+                        <header>
+                            <h4>Stock bajo</h4>
+                        </header>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-alert-triangle">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 9v4" />
+                            <path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0" />
+                            <path d="M12 16h.01" />
+                        </svg>
+                        <span id="stock-bajo">
+                            0 
+                        </span>
+                        <footer>
+                            requiere atención
+                        </footer>
+                    </article>
+
+                    <article class="cards ventas">
+                        <header>
+                            <h4>Ventas hoy</h4>
+                        </header>
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-receipt-2">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2" />
+                            <path d="M14 8h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5m2 0v1.5m0 -9v1.5" />
+                        </svg>
+                        <span id="stats-ventas">
+                            $0 COP
+                        </span>
+                        <footer>
+                            12% vs ayer
+                        </footer>
+                    </article>
+
+                    <article class="cards pedidos">
+                        <header>
+                            <h4>Pedidos pendientes</h4>
+                        </header>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-camper">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 18a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path d="M15 18a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path d="M5 18h-1a1 1 0 0 1 -1 -1v-11a2 2 0 0 1 2 -2h12a4 4 0 0 1 4 4h-18" />
+                            <path d="M9 18h6" /><path d="M19 18h1a1 1 0 0 0 1 -1v-4l-3 -5" />
+                            <path d="M21 13h-7" /><path d="M14 8v10" />
+                        </svg>
+                        <span id="pedidos-pendientes">
+                            0
+                        </span>
+                        <footer>
+                            2% vs semana pasada
+                        </footer>
+                    </article>
+
+                    <article class="cards cardsl distribucion">
+                        <header>
+                            <h4>Distribución de sabores</h4>
+                            <small>por cantidad en kilos (kg)</small>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-dots">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M4 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                                <path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                                <path d="M18 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                            </svg>
+                        </header>
+                        <article>
+                            <div>
+                                <p>Mango</p>
+                                <p><strong>4200kg (35%)</strong></p>
+                            </div>
+                            
+                            <div class="barra-fondo">
+                                <div class="barra-rellenom" style="width: 55%">
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                            <p>Mora</p>
+                            <p><strong>3250kg (40%)</strong></p>
+                            </div>
+                            <div class="barra-fondo">
+                                <div class="barra-rellenomo" style="width: 25%;">
+                                </div>
+                            </div>
+                        </article>
+                        <footer>
+                            <nav>
+                                <a class="link" href="">Ver reporte completo -></a>
+                            </nav>
+                        </footer>
+                    </article>
+                    <article class="cards cardsg grafica">
+                        <header>
+                            <div>
+                                <h4>Tendencia de ventas</h4>
+                                <small>Últimos 7 días</small>
+                            </div>
+                            <div class="filtros-grafica">
+                                <button class="btn-filtro activo" data-dias="7">7 días</button>
+                                <button class="btn-filtro" data-dias="30">30 días</button>
+                                <button class="btn-filtro" data-dias="90">3 meses</button>
+                            </div>
+                            
+                        </header>
+                        <canvas id="grafica-ventas"></canvas>
+                        <footer>
+                        </footer>
+                    </article>
+
+                    <article class="cards-table alertas-stock">
+                        <header>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-alert-triangle">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M12 9v4" />
+                                    <path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0" />
+                                    <path d="M12 16h.01" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Alertas de stock bajo</h4>
+                                <a class="link" href="">Ver todo</a>
+                            </div>
+                            
+                        </header>
+                        <table>
+                            <colgroup span="3" class="columns"></colgroup>
+                            <thead>
+                                <tr>
+                                    <th>PRODUCTO</th>
+                                    <th>STOCK ACTUAL</th>
+                                    <th>ACCIÓN</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabla-alertas">
+            
+                            </tbody>
+                            
+                        </table>
+                    </article>
+                    <article class="cards-table pedidos-recientes">
+                        <header>
+                            <h4>Pedidos recientes</h4>
+                            <a class="link" href="">Ver todo</a>
+                        </header>
+                        <table>
+                            <colgroup span="4" class="columns"></colgroup>
+                            <thead>
+                                <tr>
+                                    <th>ID PEDIDO</th>
+                                    <th>CLIENTE</th>
+                                    <th>TOTAL(Kg)</th>
+                                    <th>ESTADO</th>
+                                    <th>ACCIÓN</th>
+                                </tr>
+                            </thead>
+                            
+                            <tbody id="tabla-cuerpo">
+                            </tbody>
+                        </table>
+                    </article>
+                    
+                </section>
+        </main>
+        <footer>
+
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <div class="modal-overlay" id="modal-pedido">
+            <div class="modal">
+                <div class="modal-header">
+                    <h3>Nuevo pedido</h3>
+                    <button class="modal-cerrar" id="modal-cerrar">✕</button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="campo">
+                        <label>Cliente</label>
+                        <input type="text" id="input-cliente" placeholder="Nombre del cliente"/>
+                    </div>
+                    <div class="campo">
+                        <label>Fruta</label>
+                        <select id="input-fruta">
+                            <option value="">Selecciona una fruta</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label>Cantidad (kg)</label>
+                        <input type="number" id="input-cantidad" placeholder="0"/>
+                    </div>
+                    <div class="campo">
+                        <label>Fecha de entrega</label>
+                        <input type="date" id="input-fecha"/>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button id="btn-cancelar">Cancelar</button>
+                    <button id="btn-guardar-pedido">Guardar pedido</button>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    
+
+</html> 

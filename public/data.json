@@ -1,0 +1,718 @@
+{
+  "inventario": [
+    {
+      "fruta": "Mora",
+      "stock_actual": 120,
+      "stock_minimo": 50,
+      "precio_kg": 12500
+    },
+    {
+      "fruta": "Mango",
+      "stock_actual": 35,
+      "stock_minimo": 60,
+      "precio_kg": 10000
+    },
+    {
+      "fruta": "Lulo",
+      "stock_actual": 15,
+      "stock_minimo": 40,
+      "precio_kg": 14000
+    },
+    {
+      "fruta": "Fresa",
+      "stock_actual": 250,
+      "stock_minimo": 100,
+      "precio_kg": 13000
+    }
+  ],
+  "pedidos": [
+    {
+      "id": "2849",
+      "cliente": "Tienda Local",
+      "fruta": "Fresa",
+      "cant": 41,
+      "fecha": "2026-05-26",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2850",
+      "cliente": "Frutas del Norte",
+      "fruta": "Fresa",
+      "cant": 41,
+      "fecha": "2026-05-26",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2851",
+      "cliente": "Frutas del Norte",
+      "fruta": "Lulo",
+      "cant": 74,
+      "fecha": "2026-05-27",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "2852",
+      "cliente": "Mercado Central",
+      "fruta": "Fresa",
+      "cant": 44,
+      "fecha": "2026-05-27",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2853",
+      "cliente": "Mercado Central",
+      "fruta": "Mango",
+      "cant": 45,
+      "fecha": "2026-05-27",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2854",
+      "cliente": "Distribuidora Sur",
+      "fruta": "Mora",
+      "cant": 58,
+      "fecha": "2026-05-27",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2855",
+      "cliente": "Distribuidora Sur",
+      "fruta": "Fresa",
+      "cant": 16,
+      "fecha": "2026-05-28",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2856",
+      "cliente": "Mercado Central",
+      "fruta": "Fresa",
+      "cant": 69,
+      "fecha": "2026-05-28",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2857",
+      "cliente": "Mercado Central",
+      "fruta": "Lulo",
+      "cant": 34,
+      "fecha": "2026-05-29",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2858",
+      "cliente": "Distribuidora Sur",
+      "fruta": "Lulo",
+      "cant": 34,
+      "fecha": "2026-05-29",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2859",
+      "cliente": "Distribuidora Sur",
+      "fruta": "Lulo",
+      "cant": 17,
+      "fecha": "2026-05-30",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2860",
+      "cliente": "Frutas del Norte",
+      "fruta": "Mora",
+      "cant": 61,
+      "fecha": "2026-05-30",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "2861",
+      "cliente": "Surtifruver",
+      "fruta": "Mango",
+      "cant": 27,
+      "fecha": "2026-05-31",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2862",
+      "cliente": "Mercado Central",
+      "fruta": "Mango",
+      "cant": 37,
+      "fecha": "2026-05-31",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2863",
+      "cliente": "Tienda Local",
+      "fruta": "Lulo",
+      "cant": 40,
+      "fecha": "2026-06-01",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2864",
+      "cliente": "Tienda Local",
+      "fruta": "Lulo",
+      "cant": 25,
+      "fecha": "2026-06-01",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2865",
+      "cliente": "Frutas del Norte",
+      "fruta": "Lulo",
+      "cant": 19,
+      "fecha": "2026-06-01",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2866",
+      "cliente": "Tienda Local",
+      "fruta": "Mango",
+      "cant": 20,
+      "fecha": "2026-06-01",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2867",
+      "cliente": "Tienda Local",
+      "fruta": "Mango",
+      "cant": 34,
+      "fecha": "2026-06-02",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "2868",
+      "cliente": "Frutas del Norte",
+      "fruta": "Lulo",
+      "cant": 33,
+      "fecha": "2026-06-02",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "2869",
+      "cliente": "Distribuidora Sur",
+      "fruta": "Lulo",
+      "cant": 21,
+      "fecha": "2026-06-02",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "2870",
+      "cliente": "Tienda Local",
+      "fruta": "Mora",
+      "cant": 49,
+      "fecha": "2026-06-02",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2871",
+      "cliente": "Tienda Local",
+      "fruta": "Lulo",
+      "cant": 26,
+      "fecha": "2026-06-03",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "2872",
+      "cliente": "Surtifruver",
+      "fruta": "Mora",
+      "cant": 52,
+      "fecha": "2026-06-03",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2873",
+      "cliente": "Distribuidora Sur",
+      "fruta": "Mango",
+      "cant": 30,
+      "fecha": "2026-06-03",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2874",
+      "cliente": "Frutas del Norte",
+      "fruta": "Fresa",
+      "cant": 50,
+      "fecha": "2026-06-04",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "2875",
+      "cliente": "Surtifruver",
+      "fruta": "Mango",
+      "cant": 26,
+      "fecha": "2026-06-04",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2876",
+      "cliente": "Frutas del Norte",
+      "fruta": "Fresa",
+      "cant": 44,
+      "fecha": "2026-06-04",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2877",
+      "cliente": "Distribuidora Sur",
+      "fruta": "Mora",
+      "cant": 64,
+      "fecha": "2026-06-05",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2878",
+      "cliente": "Mercado Central",
+      "fruta": "Mango",
+      "cant": 60,
+      "fecha": "2026-06-05",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2879",
+      "cliente": "Mercado Central",
+      "fruta": "Mora",
+      "cant": 32,
+      "fecha": "2026-06-05",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "2880",
+      "cliente": "Surtifruver",
+      "fruta": "Mora",
+      "cant": 24,
+      "fecha": "2026-06-06",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2881",
+      "cliente": "Surtifruver",
+      "fruta": "Fresa",
+      "cant": 57,
+      "fecha": "2026-06-06",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2882",
+      "cliente": "Tienda Local",
+      "fruta": "Fresa",
+      "cant": 21,
+      "fecha": "2026-06-06",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2883",
+      "cliente": "Surtifruver",
+      "fruta": "Lulo",
+      "cant": 30,
+      "fecha": "2026-06-07",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "2884",
+      "cliente": "Tienda Local",
+      "fruta": "Mora",
+      "cant": 36,
+      "fecha": "2026-06-07",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "2885",
+      "cliente": "Tienda Local",
+      "fruta": "Lulo",
+      "cant": 72,
+      "fecha": "2026-06-07",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2886",
+      "cliente": "Frutas del Norte",
+      "fruta": "Mora",
+      "cant": 36,
+      "fecha": "2026-06-07",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "2887",
+      "cliente": "Frutas del Norte",
+      "fruta": "Mango",
+      "cant": 67,
+      "fecha": "2026-06-08",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2888",
+      "cliente": "Mercado Central",
+      "fruta": "Mango",
+      "cant": 28,
+      "fecha": "2026-06-08",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2889",
+      "cliente": "Frutas del Norte",
+      "fruta": "Fresa",
+      "cant": 51,
+      "fecha": "2026-06-09",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2890",
+      "cliente": "Surtifruver",
+      "fruta": "Mango",
+      "cant": 70,
+      "fecha": "2026-06-09",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "2891",
+      "cliente": "Distribuidora Sur",
+      "fruta": "Lulo",
+      "cant": 55,
+      "fecha": "2026-06-09",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2892",
+      "cliente": "Mercado Central",
+      "fruta": "Lulo",
+      "cant": 24,
+      "fecha": "2026-06-09",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2893",
+      "cliente": "Frutas del Norte",
+      "fruta": "Mora",
+      "cant": 64,
+      "fecha": "2026-06-10",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2894",
+      "cliente": "Mercado Central",
+      "fruta": "Lulo",
+      "cant": 68,
+      "fecha": "2026-06-10",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "2895",
+      "cliente": "Tienda Local",
+      "fruta": "Mango",
+      "cant": 19,
+      "fecha": "2026-06-10",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2896",
+      "cliente": "Mercado Central",
+      "fruta": "Mango",
+      "cant": 24,
+      "fecha": "2026-06-11",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2897",
+      "cliente": "Distribuidora Sur",
+      "fruta": "Mango",
+      "cant": 69,
+      "fecha": "2026-06-11",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "2898",
+      "cliente": "Tienda Local",
+      "fruta": "Mora",
+      "cant": 28,
+      "fecha": "2026-06-12",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2899",
+      "cliente": "Frutas del Norte",
+      "fruta": "Lulo",
+      "cant": 36,
+      "fecha": "2026-06-12",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2900",
+      "cliente": "Surtifruver",
+      "fruta": "Mora",
+      "cant": 61,
+      "fecha": "2026-06-13",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2901",
+      "cliente": "Mercado Central",
+      "fruta": "Lulo",
+      "cant": 30,
+      "fecha": "2026-06-13",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2902",
+      "cliente": "Tienda Local",
+      "fruta": "Mango",
+      "cant": 68,
+      "fecha": "2026-06-14",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "2903",
+      "cliente": "Distribuidora Sur",
+      "fruta": "Mango",
+      "cant": 28,
+      "fecha": "2026-06-14",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2904",
+      "cliente": "Frutas del Norte",
+      "fruta": "Fresa",
+      "cant": 69,
+      "fecha": "2026-06-14",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "2905",
+      "cliente": "Mercado Central",
+      "fruta": "Lulo",
+      "cant": 66,
+      "fecha": "2026-06-15",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "2906",
+      "cliente": "Tienda Local",
+      "fruta": "Fresa",
+      "cant": 36,
+      "fecha": "2026-06-15",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2907",
+      "cliente": "Mercado Central",
+      "fruta": "Fresa",
+      "cant": 74,
+      "fecha": "2026-06-15",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2908",
+      "cliente": "Distribuidora Sur",
+      "fruta": "Fresa",
+      "cant": 72,
+      "fecha": "2026-06-16",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2909",
+      "cliente": "Distribuidora Sur",
+      "fruta": "Mora",
+      "cant": 33,
+      "fecha": "2026-06-16",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2910",
+      "cliente": "Distribuidora Sur",
+      "fruta": "Mora",
+      "cant": 23,
+      "fecha": "2026-06-16",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2911",
+      "cliente": "Surtifruver",
+      "fruta": "Mora",
+      "cant": 16,
+      "fecha": "2026-06-17",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "2912",
+      "cliente": "Tienda Local",
+      "fruta": "Mora",
+      "cant": 33,
+      "fecha": "2026-06-17",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2913",
+      "cliente": "Mercado Central",
+      "fruta": "Lulo",
+      "cant": 69,
+      "fecha": "2026-06-17",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2914",
+      "cliente": "Mercado Central",
+      "fruta": "Lulo",
+      "cant": 21,
+      "fecha": "2026-06-17",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2915",
+      "cliente": "Frutas del Norte",
+      "fruta": "Fresa",
+      "cant": 16,
+      "fecha": "2026-06-18",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2916",
+      "cliente": "Mercado Central",
+      "fruta": "Fresa",
+      "cant": 50,
+      "fecha": "2026-06-18",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2917",
+      "cliente": "Distribuidora Sur",
+      "fruta": "Lulo",
+      "cant": 42,
+      "fecha": "2026-06-18",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2918",
+      "cliente": "Tienda Local",
+      "fruta": "Lulo",
+      "cant": 57,
+      "fecha": "2026-06-18",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "2919",
+      "cliente": "Frutas del Norte",
+      "fruta": "Fresa",
+      "cant": 70,
+      "fecha": "2026-06-19",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2920",
+      "cliente": "Frutas del Norte",
+      "fruta": "Mora",
+      "cant": 65,
+      "fecha": "2026-06-19",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2921",
+      "cliente": "Mercado Central",
+      "fruta": "Mora",
+      "cant": 42,
+      "fecha": "2026-06-20",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "2922",
+      "cliente": "Surtifruver",
+      "fruta": "Mango",
+      "cant": 30,
+      "fecha": "2026-06-20",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2923",
+      "cliente": "Tienda Local",
+      "fruta": "Mora",
+      "cant": 37,
+      "fecha": "2026-06-20",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2924",
+      "cliente": "Mercado Central",
+      "fruta": "Mora",
+      "cant": 73,
+      "fecha": "2026-06-21",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2925",
+      "cliente": "Surtifruver",
+      "fruta": "Lulo",
+      "cant": 60,
+      "fecha": "2026-06-21",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2926",
+      "cliente": "Surtifruver",
+      "fruta": "Fresa",
+      "cant": 28,
+      "fecha": "2026-06-22",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2927",
+      "cliente": "Distribuidora Sur",
+      "fruta": "Mora",
+      "cant": 62,
+      "fecha": "2026-06-22",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2928",
+      "cliente": "Surtifruver",
+      "fruta": "Mango",
+      "cant": 32,
+      "fecha": "2026-06-22",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2929",
+      "cliente": "Surtifruver",
+      "fruta": "Lulo",
+      "cant": 15,
+      "fecha": "2026-06-23",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2930",
+      "cliente": "Surtifruver",
+      "fruta": "Mango",
+      "cant": 58,
+      "fecha": "2026-06-23",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2931",
+      "cliente": "Mercado Central",
+      "fruta": "Fresa",
+      "cant": 56,
+      "fecha": "2026-06-24",
+      "estado": "Entregado"
+    },
+    {
+      "id": "2932",
+      "cliente": "Tienda Local",
+      "fruta": "Fresa",
+      "cant": 35,
+      "fecha": "2026-06-24",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "2933",
+      "cliente": "Tienda Local",
+      "fruta": "Mango",
+      "cant": 61,
+      "fecha": "2026-06-24",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "2934",
+      "cliente": "Tienda Local",
+      "fruta": "Mora",
+      "cant": 30,
+      "fecha": "2026-06-24",
+      "estado": "Entregado"
+    }
+  ]
+}
